@@ -173,22 +173,62 @@ function App() {
       </motion.section>
 
       {/* CONTACT SECTION */}
-      <motion.section
-        id="contact"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="py-20 px-6 bg-gray-900 text-center"
-      >
-        <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-          Contact Me
-        </h2>
+<motion.section
+  id="contact"
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="py-20 px-6 bg-gray-900 text-center"
+>
+  <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+    Contact Me
+  </h2>
 
-        <p className="text-gray-400">
-          patilsagar2130@gmail.com
-        </p>
-      </motion.section>
+  <div className="space-y-4 text-gray-400 mb-6">
+
+    <p>
+      Email:
+      <a
+        href="mailto:patilsagar2130@gmail.com"
+        className="text-blue-400 hover:underline ml-2"
+      >
+        patilsagar2130@gmail.com
+      </a>
+    </p>
+
+    <p>
+      Phone:
+      <a
+        href="tel:+917666476318"
+        className="text-blue-400 hover:underline ml-2"
+      >
+        +91 76664 76318
+      </a>
+    </p>
+
+  </div>
+
+  <div className="space-x-6">
+    <a
+      href="https://github.com/sagarrr21"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-400 hover:underline"
+    >
+      GitHub
+    </a>
+
+    <a
+      href="https://www.linkedin.com/in/sagar-patil-392b3124b/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-400 hover:underline"
+    >
+      LinkedIn
+    </a>
+  </div>
+</motion.section>
 
     </div>
   );
