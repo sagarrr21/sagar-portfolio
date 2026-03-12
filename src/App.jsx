@@ -34,7 +34,7 @@ function App() {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-xl text-gray-400 mb-6"
         >
-          Full-Stack Developer | Cloud & ML Enthusiast
+          Full-Stack Developer
         </motion.p>
 
         <motion.a
@@ -116,7 +116,7 @@ function App() {
           <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl text-left">
             <h3 className="text-xl font-semibold">Full Stack Developer</h3>
             <p className="text-gray-400">
-              Avenir Technologies | March 2023 – Present | Remote
+              Apex arrow consultancy Mar 2023 - Present
             </p>
           </div>
 

@@ -1,30 +1,42 @@
-function App() {
-  return (
-    <div className="bg-gray-950 text-white min-h-screen font-sans">
-
-      {/* HERO SECTION */}
-      <section className="h-screen flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-5xl font-bold mb-4">Sagar Patil</h1>
-        <p className="text-xl text-gray-400 mb-6">
-          Full-Stack Developer | ML Enthusiast | Cloud Explorer
-        </p>
-        <button className="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-500 transition">
-          View Projects
-        </button>
-      </section>
-
-      {/* ABOUT SECTION */}
-      <section className="py-20 px-6 bg-gray-900 text-center">
-        <h2 className="text-3xl font-bold mb-6">About Me</h2>
-        <p className="max-w-3xl mx-auto text-gray-400">
-          Computer Science undergraduate passionate about building scalable web
-          applications and intelligent ML systems. Experienced in full-stack
-          development and cloud deployment.
-        </p>
-      </section>
-
-    </div>
-  )
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-export default App
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
